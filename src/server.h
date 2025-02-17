@@ -17,7 +17,7 @@ public:
         void start();
         ~Server();
 private:
-    int server_id;
+    int server_fd;
     int port;
     unique_ptr<Protocol> protocol;
 };
